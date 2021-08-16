@@ -1,0 +1,9 @@
+<form>
+<view>
+<hiddenFields>
+  <field udn="updater"/>
+  <field udn="creator"/>
+  <field udn="creationEvent.createdBy"/>
+</hiddenFields>
+</view>
+</form>

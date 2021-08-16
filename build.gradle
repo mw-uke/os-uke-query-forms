@@ -1,0 +1,25 @@
+import org.apache.tools.ant.filters.ReplaceTokens
+import org.apache.tools.ant.taskdefs.condition.Os
+import static groovy.io.FileType.FILES
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+
+jar {
+  baseName = 'os-uke-query-forms'
+  version = '0.0.1'
+
+  manifest {
+    attributes("os-plugin-name": "os-uke-query-forms")
+  }
+
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+
+
+
+build.dependsOn jar
